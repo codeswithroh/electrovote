@@ -20,7 +20,7 @@ export default function ViewPoll({ match }) {
       setPoll(data);
     };
     fetchPoll();
-  }, [voted]);
+  }, [voted])// eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     const fetchClientIpAddress = async () => {
@@ -71,7 +71,7 @@ export default function ViewPoll({ match }) {
   return (
     <div className='container mx-auto mt-16 px-5'>
       <h1 className='my-5 text-3xl text-center'>
-        Welcome to Polar Voting Platform
+        Welcome to ElectroVote
       </h1>
 
       {poll ? (
