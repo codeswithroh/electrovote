@@ -6,7 +6,7 @@ module.exports = async (request, response, next) => {
     try {
         await validateAll(request.body, {
             choice: 'required',
-            ip: 'required|ipv6'
+            // ip: 'required|ipv6'
         })
         return next()
     } catch(errors) {
